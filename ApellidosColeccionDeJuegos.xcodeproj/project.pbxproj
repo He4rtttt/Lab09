@@ -14,6 +14,7 @@
 		464B04532CAB5E0500ADD04E /* ApellidosColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 464B04512CAB5E0500ADD04E /* ApellidosColeccionDeJuegos.xcdatamodeld */; };
 		464B04552CAB5E0600ADD04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464B04542CAB5E0600ADD04E /* Assets.xcassets */; };
 		464B04582CAB5E0600ADD04E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464B04562CAB5E0600ADD04E /* LaunchScreen.storyboard */; };
+		464B04602CAB618200ADD04E /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B045F2CAB618200ADD04E /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		464B04542CAB5E0600ADD04E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		464B04572CAB5E0600ADD04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		464B04592CAB5E0600ADD04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464B045F2CAB618200ADD04E /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				464B04562CAB5E0600ADD04E /* LaunchScreen.storyboard */,
 				464B04592CAB5E0600ADD04E /* Info.plist */,
 				464B04512CAB5E0500ADD04E /* ApellidosColeccionDeJuegos.xcdatamodeld */,
+				464B045F2CAB618200ADD04E /* JuegosViewController.swift */,
 			);
 			path = ApellidosColeccionDeJuegos;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464B04602CAB618200ADD04E /* JuegosViewController.swift in Sources */,
 				464B044D2CAB5E0500ADD04E /* ViewController.swift in Sources */,
 				464B04532CAB5E0500ADD04E /* ApellidosColeccionDeJuegos.xcdatamodeld in Sources */,
 				464B04492CAB5E0500ADD04E /* AppDelegate.swift in Sources */,
