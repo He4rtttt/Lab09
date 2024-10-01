@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="gEp-3o-ff4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cC0-Z9-jd9">
                             <connections>
-                                <segue destination="H3O-Td-Mbk" kind="show" id="GXm-G0-jI0"/>
+                                <segue destination="H3O-Td-Mbk" kind="show" identifier="juegoSegue" id="GXm-G0-jI0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,16 +73,32 @@
                                     <action selector="agregarTapped:" destination="H3O-Td-Mbk" eventType="touchUpInside" id="w7N-cb-6Ea"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXT-m4-plL">
+                                <rect key="frame" x="169" y="393" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="H3O-Td-Mbk" eventType="touchUpInside" id="6l6-Rx-Jaq"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5t-rD-VSH">
+                                <rect key="frame" x="0.0" y="444" width="414" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l30-vi-1mQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Y5t-rD-VSH" firstAttribute="centerX" secondItem="wXT-m4-plL" secondAttribute="centerX" id="GON-1j-xSV"/>
+                            <constraint firstItem="wXT-m4-plL" firstAttribute="top" secondItem="iV5-Oa-J1i" secondAttribute="bottom" constant="15" id="RS1-Re-7dI"/>
                             <constraint firstItem="q8y-Pq-wvY" firstAttribute="top" secondItem="l30-vi-1mQ" secondAttribute="top" constant="32" id="RaS-g5-14X"/>
                             <constraint firstItem="iV5-Oa-J1i" firstAttribute="centerX" secondItem="qro-KU-FLY" secondAttribute="centerX" id="RkO-3i-l0a"/>
+                            <constraint firstItem="wXT-m4-plL" firstAttribute="centerX" secondItem="iV5-Oa-J1i" secondAttribute="centerX" id="YOV-dr-W80"/>
                             <constraint firstItem="q8y-Pq-wvY" firstAttribute="width" secondItem="qro-KU-FLY" secondAttribute="width" id="YzE-Wj-pvG"/>
                             <constraint firstItem="q8y-Pq-wvY" firstAttribute="centerX" secondItem="EuL-u0-oXM" secondAttribute="centerX" id="cbM-k3-7b7"/>
                             <constraint firstItem="q8y-Pq-wvY" firstAttribute="trailing" secondItem="qro-KU-FLY" secondAttribute="trailing" id="elL-eh-c5j"/>
+                            <constraint firstItem="Y5t-rD-VSH" firstAttribute="top" secondItem="wXT-m4-plL" secondAttribute="bottom" constant="20" id="gEA-gJ-gbj"/>
                             <constraint firstItem="qro-KU-FLY" firstAttribute="top" secondItem="q8y-Pq-wvY" secondAttribute="bottom" constant="23" id="gMl-Gg-P1y"/>
+                            <constraint firstItem="Y5t-rD-VSH" firstAttribute="leading" secondItem="l30-vi-1mQ" secondAttribute="leading" id="tiM-XS-56Z"/>
                             <constraint firstItem="iV5-Oa-J1i" firstAttribute="top" secondItem="qro-KU-FLY" secondAttribute="bottom" constant="20" id="zxD-7J-xeU"/>
                         </constraints>
                     </view>
@@ -101,6 +117,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="agregarActualizarBoton" destination="iV5-Oa-J1i" id="6LH-Mu-krd"/>
+                        <outlet property="categoriaPickerView" destination="Y5t-rD-VSH" id="CTf-uL-DLg"/>
+                        <outlet property="eliminarBoton" destination="wXT-m4-plL" id="Bo0-G0-JLH"/>
                         <outlet property="imageView" destination="q8y-Pq-wvY" id="WAu-Wg-OT2"/>
                         <outlet property="tituloTextField" destination="qro-KU-FLY" id="lnU-fM-cr7"/>
                     </connections>
